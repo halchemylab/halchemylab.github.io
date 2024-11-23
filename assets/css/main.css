@@ -956,6 +956,9 @@ section,
 }
 
 .portfolio .portfolio-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   transition: 0.3s;
 }
 
