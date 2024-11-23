@@ -1,9 +1,10 @@
 /**
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap');
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Playfair Display",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Futura", sans-serif;
+  --heading-font: "Futura", sans-serif;
+  --nav-font: "Futura", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
