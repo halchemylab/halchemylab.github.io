@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Car Price Prediction | Henry Pai's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Awesome Font Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Google tag-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX2C0PKMFQ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NX2C0PKMFQ');
+  </script>
+
+  <!-- Custom CSS -->
+  <style>
+    .centered-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style: disc;
+    }
+
+    ol {
+      padding-left: 20px;
+      list-style: decimal;
+    }
+
+    .section-title {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body class="project-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">H. PAI</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="project-hero" class="hero section dark-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Telecom Company Customer Churn Prediction Machine Learning Project</h2>
+        <p class="project-subtitle">Machine Learning and Streamlit</p>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section">
+      <div class="container" style="display: flex; justify-content: center; align-items: center; margin: 0 auto; width: 100%;">
+        <iframe src="https://car-price-prediction-machine-learning-project-iohnqzz4dfbovnw6.streamlit.app/?embed=true" width="100%" height="800px"></iframe>
+      </div>
+    </section>
+
+    <section id="dashboard-description" class="section">
+      <div class="container centered-container" style="max-width: 800px; margin: 0 auto; padding: 2rem 0;" data-aos="fade-up">
+
+        <!-- Project Overview -->
+        <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Project Overview</h3>
+        <p style="text-align: left;">
+          The Customer Churn Prediction project focuses on identifying customers at risk of leaving a telecom service provider. Churn prediction is critical for businesses to proactively address customer retention challenges. The project leverages machine learning models to analyze customer behavior and predict the likelihood of churn. By providing a user-friendly interface for prediction, the application helps stakeholders make data-driven decisions to minimize churn and improve customer satisfaction.
+        </p>
+
+        <!-- Key Steps and Methodology -->
+        <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Key Steps and Methodology</h3>
+
+        <!-- EDA -->
+        <h4 style="text-align: left; padding-top: 1rem;">1. Exploratory Data Analysis (EDA)</h4>
+        <ul style="text-align: left; padding-left: 1.5rem;">
+          <li>Visualizing relationships between features like tenure, monthly charges, and churn status.</li>
+          <li>Analyzing demographic data, billing patterns, and their correlation with churn.</li>
+          <li>Identifying key drivers of churn through statistical summaries and visualizations.</li>
+        </ul>
+
+        <!-- Data Cleaning -->
+        <h4 style="text-align: left; padding-top: 1rem;">2. Data Cleaning</h4>
+        <ul style="text-align: left; padding-left: 1.5rem;">
+          <li>Addressing missing or null values.</li>
+          <li>Removing duplicates and correcting inconsistencies.</li>
+          <li>Handling outliers to improve model robustness.</li>
+        </ul>
+
+        <!-- Feature Engineering -->
+        <h4 style="text-align: left; padding-top: 1rem;">3. Feature Engineering</h4>
+        <ul style="text-align: left; padding-left: 1.5rem;">
+          <li>Categorical variables like gender are encoded into numerical formats..</li>
+          <li>Features such as tenure and monthly charges are scaled to ensure uniformity.</li>
+          <li>Derived features, like customer tenure categories, can provide additional insights.</li>
+        </ul>
+
+        <!-- Machine Learning -->
+        <h4 style="text-align: left; padding-top: 1rem;">4. Machine Learning</h4>
+          <p>Logistic Regression and Random Forest were among the models evaluated:</p>
+          <ul style="text-align: left; padding-left: 1.5rem;">
+            <li>High accuracy and F1-Score.</li>
+            <li>Balanced precision and recall for churn prediction.</li>
+          </ul>
+          <p>The final model was saved as a <code>.pkl</code> file for deployment in the Streamlit application.</p>
+
+        <!-- Streamlit -->
+        <h4 style="text-align: left; padding-top: 1rem;">5. Streamlit App Development</h4>
+        <ul style="text-align: left; padding-left: 1.5rem;">
+          <li>Users can input age, tenure, gender, and monthly charges.</li>
+          <li>The app processes these inputs and provides a prediction ("Yes" or "No") with an engaging interface.</li>
+          <li>This simplifies churn prediction for non-technical stakeholders.</li>
+        </ul>
+
+        <!-- Results and Impact -->
+        <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Results and Impact</h3>
+        <ul style="text-align: left; padding-left: 1.5rem;">
+          <li>Identifies high-risk customers, enabling targeted retention efforts.</li>
+          <li>Demonstrates measurable business value by reducing churn rates.</li>
+          <li>Empowers decision-makers with predictive analytics.</li>
+        </ul>
+
+        <!-- Technical Stack -->
+        <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Technical Stack</h3>
+        <ul style="text-align: left; padding-left: 1.5rem;">
+          <li><strong>Data Analysis:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn).</li>
+          <li><strong>Machine Learning:</strong> Scikit-learn.</li>
+          <li><strong>App Deployment:</strong> Streamlit.</li>
+          <li><strong>File Management:</strong> Pickle for model storage.</li>
+        </ul>
+
+        <!-- Key Takeaways -->
+        <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Key Takeaways</h3>
+        <ul style="text-align: left; padding-left: 1.5rem;">
+          <li>Customer Behavior Insights: Understanding patterns that drive churn.</li>
+          <li>Business Value: Enabling proactive measures to retain customers.</li>
+          <li>Technical Growth: Gaining expertise in machine learning, EDA, and app development.</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- GitHub Repository -->
+    <section id="dashboard-description" class="section">
+      <div class="container centered-container" style="max-width: 800px; margin: 0 auto; data-aos="fade-up;">
+        <div style="border: 1px solid black; padding: 1rem; text-align: center; margin: 0 auto; max-width: 500px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);">
+          <p style="margin: 0;">
+            <strong>If you would like to explore the project in greater detail, please visit:</strong>
+          </p>
+          <p style="margin: 0.5rem 0;">
+            <a href="https://github.com/halchemylab/Customer-Churn-Prediction-Machine-Learning-Project" target="_blank">
+              <img src="https://img.shields.io/badge/GitHub-Project_Repository-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black&color=aa2128" alt="GitHub Repository Badge">
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">HENRY PAI</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/henry-pai/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/halchemylab"><i class="bi bi-github"></i></a>
+        <a href="https://www.kaggle.com/halchemy"><i class="fab fa-kaggle"></i></a>
+      </div>
+      <div class="copyright">
+        <span>Copyright</span> <strong class="px-1 sitename">halchemylab</strong> <span>All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
