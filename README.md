@@ -1,9 +1,9 @@
-# halchemylabs.github.io
+# halchemylab.github.io
 
 This is my professional website.
 It will always be a work in progress.
 
-URL: halchemylabs.github.io
+URL: halchemylab.github.io
 
 Main Points:
 - Showcase my expertise/portfolio
