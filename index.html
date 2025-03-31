@@ -607,7 +607,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div}
       </div>
 
       <style>
@@ -696,6 +696,53 @@
         </div>
       </div>
     </section><!-- End Contact Section -->
+
+    <style>
+      /* Contact Cards Styling */
+      .contact-card .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: white;
+      }
+      
+      .contact-card .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+      }
+      
+      .contact-card .icon-box {
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: rgba(13, 110, 253, 0.1);
+        position: relative;
+        z-index: 1;
+      }
+      
+      .contact-card .card:hover .icon-box {
+        background: rgba(13, 110, 253, 0.2);
+      }
+      
+      .contact-card .icon-box i {
+        font-size: 32px;
+        color: #0d6efd;
+        z-index: 2;
+        position: relative;
+      }
+      
+      .contact-card .card-body {
+        position: relative;
+        z-index: 1;
+        background: white;
+      }
+      
+      .contact-card .card:hover .card-body {
+        background: white;
+      }
+    </style>
 
   </main>
 
