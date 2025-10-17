@@ -703,17 +703,24 @@ section,
 .navmenu a.think-tank-link {
   color: var(--nav-color);
   position: relative;
-  transition: color 0.18s ease, box-shadow 0.18s ease, text-shadow 0.18s ease;
+  transition: color 0.18s ease;
 }
 .navmenu a.think-tank-link:hover,
 .navmenu a.think-tank-link:focus {
-  color: #FFD700 !important; /* golden yellow text */
-  text-shadow: 0 0 6px rgba(255, 215, 0, 0.9), 0 0 12px rgba(255, 215, 0, 0.6);
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+  color: #b88600 !important; /* darker golden (dark goldenrod-like) */
+  text-shadow: none;
+  box-shadow: none;
   outline: none;
 }
-.navmenu a.think-tank-link:focus {
-  box-shadow: 0 0 10px rgba(255,215,0,0.35), 0 0 4px rgba(255,215,0,0.25) inset;
+/* Ensure same color change in mobile nav menu */
+@media (max-width: 1199px) {
+  .navmenu a.think-tank-link {
+    color: var(--nav-dropdown-color);
+  }
+  .navmenu a.think-tank-link:hover,
+  .navmenu a.think-tank-link:focus {
+    color: #b88600 !important;
+  }
 }
 
 @media (max-width: 768px) {
