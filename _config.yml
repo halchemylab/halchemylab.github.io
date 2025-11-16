@@ -1,0 +1,29 @@
+
+# Site settings
+title: Henry Pai | Portfolio
+email: hyp243@nyu.edu
+description: "Henry Pai's Portfolio: Expert Fullstack Developer, Data Specialist & Marketer in Los Angeles. Discover projects in AI, ML, Data Viz, RPA, Business Strategy & more."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://halchemylab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima # You can choose another theme if you prefer, or remove this line if you're not using a theme.
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by Jekyll.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - README.md
