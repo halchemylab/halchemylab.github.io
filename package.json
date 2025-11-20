@@ -1,0 +1,33 @@
+{
+  "name": "halchemylab.github.io",
+  "version": "1.0.0",
+  "description": "This is my professional website. It will always be a work in progress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "lint:css": "stylelint \"**/*.css\" --fix --allow-empty-input",
+    "lint:js": "eslint \"**/*.js\" --no-error-on-unmatched-pattern"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halchemylab/halchemylab.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/halchemylab/halchemylab.github.io/issues"
+  },
+  "homepage": "https://github.com/halchemylab/halchemylab.github.io#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.25.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^39.0.1"
+  }
+}

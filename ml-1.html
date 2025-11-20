@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<main class="main">
 
+<main class="main">
   <!-- Hero Section -->
   <section id="project-hero" class="hero section dark-background">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -12,123 +12,258 @@ layout: default
   </section>
   <!-- End Hero Section -->
 
-<!-- Dashboard Section -->
-<section id="dashboard" class="section">
-<div class="container" style="display: flex; justify-content: center; align-items: center; margin: 0 auto; width: 100%;">
-    <iframe src="https://restaurants-prediction-machine-learning-project-jeqdqytezdcudr.streamlit.app/?embed=true" width="100%" height="600px"></iframe>
-</div>
-</section>
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="section">
+    <div
+      class="container"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+      "
+    >
+      <iframe
+        src="https://restaurants-prediction-machine-learning-project-jeqdqytezdcudr.streamlit.app/?embed=true"
+        width="100%"
+        height="600px"
+      ></iframe>
+    </div>
+  </section>
 
-<section id="dashboard-description" class="section">
-<div class="container centered-container" style="max-width: 800px; margin: 0 auto; padding: 2rem 0;" data-aos="fade-up">
-    
-    <!-- Project Overview -->
-    <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Project Overview</h3>
-    <p style="text-align: left;">
-        This project leverages exploratory data analysis (EDA), data cleaning, and machine learning techniques to create actionable insights for a restaurant dataset. It culminates in an interactive Streamlit app, showcasing predictions and data exploration through a user-friendly interface. By harnessing the best-performing machine learning model, GridSearchCV-tuned Random Forest Regressor (GridRFR), the app provides reliable predictions while demonstrating the end-to-end data science workflow.
-    </p>
+  <section id="dashboard-description" class="section">
+    <div
+      class="container centered-container"
+      style="max-width: 800px; margin: 0 auto; padding: 2rem 0"
+      data-aos="fade-up"
+    >
+      <!-- Project Overview -->
+      <h3 style="color: #aa2128; text-align: center; padding-top: 1rem">
+        Project Overview
+      </h3>
+      <p style="text-align: left">
+        This project leverages exploratory data analysis (EDA), data cleaning,
+        and machine learning techniques to create actionable insights for a
+        restaurant dataset. It culminates in an interactive Streamlit app,
+        showcasing predictions and data exploration through a user-friendly
+        interface. By harnessing the best-performing machine learning model,
+        GridSearchCV-tuned Random Forest Regressor (GridRFR), the app provides
+        reliable predictions while demonstrating the end-to-end data science
+        workflow.
+      </p>
 
-    <!-- Key Steps and Methodology -->
-    <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Key Steps and Methodology</h3>
+      <!-- Key Steps and Methodology -->
+      <h3 style="color: #aa2128; text-align: center; padding-top: 1rem">
+        Key Steps and Methodology
+      </h3>
 
-    <!-- Exploratory Data Analysis (EDA) -->
-    <h4 style="text-align: left; padding-top: 1rem;">1. Exploratory Data Analysis (EDA)</h4>
-    <p style="text-align: left;">The project began by delving into the dataset to uncover key insights:</p>
-    <ul style="text-align: left; padding-left: 1.5rem;">
-        <li><strong>Top Cuisines:</strong> North Indian cuisine dominated the dataset, with over 53,000 votes, followed by Chinese and Mughlai options.</li>
-        <li><strong>Rating Analysis:</strong> Most restaurants received an "Average" or "Good" rating, while only a small fraction excelled or performed poorly.</li>
-    </ul>
-    <p style="text-align: left;">These findings shaped the strategy for feature selection and model development.</p>
+      <!-- Exploratory Data Analysis (EDA) -->
+      <h4 style="text-align: left; padding-top: 1rem">
+        1. Exploratory Data Analysis (EDA)
+      </h4>
+      <p style="text-align: left">
+        The project began by delving into the dataset to uncover key insights:
+      </p>
+      <ul style="text-align: left; padding-left: 1.5rem">
+        <li>
+          <strong>Top Cuisines:</strong> North Indian cuisine dominated the
+          dataset, with over 53,000 votes, followed by Chinese and Mughlai
+          options.
+        </li>
+        <li>
+          <strong>Rating Analysis:</strong> Most restaurants received an
+          "Average" or "Good" rating, while only a small fraction excelled or
+          performed poorly.
+        </li>
+      </ul>
+      <p style="text-align: left">
+        These findings shaped the strategy for feature selection and model
+        development.
+      </p>
 
-    <!-- Data Cleaning -->
-    <h4 style="text-align: left; padding-top: 1rem;">2. Data Cleaning</h4>
-    <p style="text-align: left;">The raw dataset included columns such as Restaurant Name, Country Code, City, and Cuisines. To prepare the data for modeling:</p>
-    <ul style="text-align: left; padding-left: 1.5rem;">
-        <li><strong>Missing Values:</strong> Addressed incomplete entries by imputing or dropping records based on their importance.</li>
-        <li><strong>Encoding:</strong> Transformed categorical variables like Cuisines and Rating text into numerical formats using one-hot and label encoding.</li>
-        <li><strong>Outliers:</strong> Detected and handled outliers in numerical fields such as Average Cost for two and Votes.</li>
-        <li><strong>Scaling:</strong> Standardized features using a scaler to ensure consistent model performance.</li>
-    </ul>
+      <!-- Data Cleaning -->
+      <h4 style="text-align: left; padding-top: 1rem">2. Data Cleaning</h4>
+      <p style="text-align: left">
+        The raw dataset included columns such as Restaurant Name, Country Code,
+        City, and Cuisines. To prepare the data for modeling:
+      </p>
+      <ul style="text-align: left; padding-left: 1.5rem">
+        <li>
+          <strong>Missing Values:</strong> Addressed incomplete entries by
+          imputing or dropping records based on their importance.
+        </li>
+        <li>
+          <strong>Encoding:</strong> Transformed categorical variables like
+          Cuisines and Rating text into numerical formats using one-hot and
+          label encoding.
+        </li>
+        <li>
+          <strong>Outliers:</strong> Detected and handled outliers in numerical
+          fields such as Average Cost for two and Votes.
+        </li>
+        <li>
+          <strong>Scaling:</strong> Standardized features using a scaler to
+          ensure consistent model performance.
+        </li>
+      </ul>
 
-    <!-- Feature Engineering -->
-    <h4 style="text-align: left; padding-top: 1rem;">3. Feature Engineering</h4>
-    <p style="text-align: left;">Key transformations and feature creation included:</p>
-    <ul style="text-align: left; padding-left: 1.5rem;">
-        <li><strong>Geospatial Features:</strong> Leveraged Longitude and Latitude for location clustering.</li>
-        <li><strong>Derived Metrics:</strong> Created composite metrics such as Cost per Vote to add more granularity to the analysis.</li>
-    </ul>
+      <!-- Feature Engineering -->
+      <h4 style="text-align: left; padding-top: 1rem">
+        3. Feature Engineering
+      </h4>
+      <p style="text-align: left">
+        Key transformations and feature creation included:
+      </p>
+      <ul style="text-align: left; padding-left: 1.5rem">
+        <li>
+          <strong>Geospatial Features:</strong> Leveraged Longitude and Latitude
+          for location clustering.
+        </li>
+        <li>
+          <strong>Derived Metrics:</strong> Created composite metrics such as
+          Cost per Vote to add more granularity to the analysis.
+        </li>
+      </ul>
 
-    <!-- Machine Learning -->
-    <h4 style="text-align: left; padding-top: 1rem;">4. Machine Learning</h4>
-    <p style="text-align: left;">The data was split into training and testing sets. Several machine learning models were evaluated, including:</p>
-    <ul style="text-align: left; padding-left: 1.5rem;">
+      <!-- Machine Learning -->
+      <h4 style="text-align: left; padding-top: 1rem">4. Machine Learning</h4>
+      <p style="text-align: left">
+        The data was split into training and testing sets. Several machine
+        learning models were evaluated, including:
+      </p>
+      <ul style="text-align: left; padding-left: 1.5rem">
         <li>Linear Regression</li>
         <li>Decision Trees</li>
         <li>Random Forest Regressor</li>
         <li>GridSearchCV-tuned Random Forest Regressor (GridRFR)</li>
-    </ul>
-    <p style="text-align: left;">
-        The <strong>GridRFR</strong> outperformed all models with the lowest RMSE and highest R² score, making it the backbone of the predictions. This model was saved as a <code>.pkl</code> file for deployment.
-    </p>
+      </ul>
+      <p style="text-align: left">
+        The <strong>GridRFR</strong> outperformed all models with the lowest
+        RMSE and highest R² score, making it the backbone of the predictions.
+        This model was saved as a <code>.pkl</code> file for deployment.
+      </p>
 
-    <!-- Streamlit App Development -->
-    <h4 style="text-align: left; padding-top: 1rem;">5. Streamlit App Development</h4>
-    <p style="text-align: left;">To ensure accessibility, an intuitive Streamlit app was developed. Features included:</p>
-    <ul style="text-align: left; padding-left: 1.5rem;">
-        <li><strong>Data Exploration:</strong> Users could visualize restaurant data trends, filter by cuisines, and inspect geospatial distributions.</li>
-        <li><strong>Predictive Insights:</strong> Users could input restaurant features (e.g., Cuisines, Cost, Votes) to predict outcomes like expected ratings or customer engagement.</li>
-        <li><strong>Model Deployment:</strong> The app integrated the saved scaler and model <code>.pkl</code> files, allowing real-time predictions.</li>
-    </ul>
+      <!-- Streamlit App Development -->
+      <h4 style="text-align: left; padding-top: 1rem">
+        5. Streamlit App Development
+      </h4>
+      <p style="text-align: left">
+        To ensure accessibility, an intuitive Streamlit app was developed.
+        Features included:
+      </p>
+      <ul style="text-align: left; padding-left: 1.5rem">
+        <li>
+          <strong>Data Exploration:</strong> Users could visualize restaurant
+          data trends, filter by cuisines, and inspect geospatial distributions.
+        </li>
+        <li>
+          <strong>Predictive Insights:</strong> Users could input restaurant
+          features (e.g., Cuisines, Cost, Votes) to predict outcomes like
+          expected ratings or customer engagement.
+        </li>
+        <li>
+          <strong>Model Deployment:</strong> The app integrated the saved scaler
+          and model <code>.pkl</code> files, allowing real-time predictions.
+        </li>
+      </ul>
 
-    <!-- Results and Impact -->
-    <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Results and Impact</h3>
-    <ul style="text-align: left; padding-left: 1.5rem;">
-        <li><strong>Actionable Insights:</strong> Provided restaurant businesses with tools to understand and optimize their offerings.</li>
-        <li><strong>Predictive Power:</strong> Delivered reliable forecasts to support data-driven decisions.</li>
-        <li><strong>User Experience:</strong> The Streamlit app's interactive interface made it simple for non-technical users to explore and apply the insights.</li>
-    </ul>
+      <!-- Results and Impact -->
+      <h3 style="color: #aa2128; text-align: center; padding-top: 1rem">
+        Results and Impact
+      </h3>
+      <ul style="text-align: left; padding-left: 1.5rem">
+        <li>
+          <strong>Actionable Insights:</strong> Provided restaurant businesses
+          with tools to understand and optimize their offerings.
+        </li>
+        <li>
+          <strong>Predictive Power:</strong> Delivered reliable forecasts to
+          support data-driven decisions.
+        </li>
+        <li>
+          <strong>User Experience:</strong> The Streamlit app's interactive
+          interface made it simple for non-technical users to explore and apply
+          the insights.
+        </li>
+      </ul>
 
-    <!-- Technical Stack -->
-    <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Technical Stack</h3>
-    <ul style="text-align: left; padding-left: 1.5rem;">
-        <li><strong>Data Analysis:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-        <li><strong>Machine Learning:</strong> Scikit-learn (Random Forest, GridSearchCV)</li>
+      <!-- Technical Stack -->
+      <h3 style="color: #aa2128; text-align: center; padding-top: 1rem">
+        Technical Stack
+      </h3>
+      <ul style="text-align: left; padding-left: 1.5rem">
+        <li>
+          <strong>Data Analysis:</strong> Python (Pandas, NumPy, Matplotlib,
+          Seaborn)
+        </li>
+        <li>
+          <strong>Machine Learning:</strong> Scikit-learn (Random Forest,
+          GridSearchCV)
+        </li>
         <li><strong>App Deployment:</strong> Streamlit</li>
-        <li><strong>File Management:</strong> Pickle for model and scaler storage</li>
-    </ul>
+        <li>
+          <strong>File Management:</strong> Pickle for model and scaler storage
+        </li>
+      </ul>
 
-    <!-- Key Takeaways -->
-    <h3 style="color: #aa2128; text-align: center; padding-top: 1rem;">Key Takeaways</h3>
-    <p style="text-align: left;">This case study highlights my ability to:</p>
-    <ul style="text-align: left; padding-left: 1.5rem;">
+      <!-- Key Takeaways -->
+      <h3 style="color: #aa2128; text-align: center; padding-top: 1rem">
+        Key Takeaways
+      </h3>
+      <p style="text-align: left">This case study highlights my ability to:</p>
+      <ul style="text-align: left; padding-left: 1.5rem">
         <li>Analyze and clean complex datasets.</li>
         <li>Engineer meaningful features for machine learning.</li>
         <li>Build, evaluate, and deploy advanced machine learning models.</li>
-        <li>Create accessible applications that bridge technical insights with real-world usability.</li>
-    </ul>
-    <p style="text-align: left;">
-        This project demonstrates my expertise in solving real-world problems with data-driven solutions, offering value to businesses and stakeholders.
-    </p>
-</div>
-</section>
-
-<section id="dashboard-description" class="section">
-<div class="container centered-container" style="max-width: 800px; margin: 0 auto; data-aos="fade-up;">
-    <!-- GitHub Repository Section -->
-    <div style="border: 1px solid black; padding: 1rem; text-align: center; margin: 0 auto; max-width: 500px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);">
-        <p style="margin: 0;">
-            <strong>If you would like to explore the project in greater detail, please visit:</strong>
-        </p>
-        <p style="margin: 0.5rem 0;">
-            <a href="https://github.com/halchemylab/Restaurants-Prediction-Machine-Learning-Project/tree/main" 
-               target="_blank">
-                <img src="https://img.shields.io/badge/GitHub-Project_Repository-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black&color=aa2128" 
-                     alt="GitHub Repository Badge">
-            </a>
-        </p>
+        <li>
+          Create accessible applications that bridge technical insights with
+          real-world usability.
+        </li>
+      </ul>
+      <p style="text-align: left">
+        This project demonstrates my expertise in solving real-world problems
+        with data-driven solutions, offering value to businesses and
+        stakeholders.
+      </p>
     </div>
-</div>
-</section>
+  </section>
 
-
-  </main>
+  <section id="dashboard-description" class="section">
+    <div
+      class="container centered-container"
+      style="max-width: 800px; margin: 0 auto"
+      data-aos="fade-up"
+    >
+      <!-- GitHub Repository Section -->
+      <div
+        style="
+          border: 1px solid black;
+          padding: 1rem;
+          text-align: center;
+          margin: 0 auto;
+          max-width: 500px;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <p style="margin: 0">
+          <strong
+            >If you would like to explore the project in greater detail, please
+            visit:</strong
+          >
+        </p>
+        <p style="margin: 0.5rem 0">
+          <a
+            href="https://github.com/halchemylab/Restaurants-Prediction-Machine-Learning-Project/tree/main"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/GitHub-Project_Repository-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black&color=aa2128"
+              alt="GitHub Repository Badge"
+            />
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>

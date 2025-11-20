@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<main class="main">
 
+<main class="main">
   <!-- Hero Section -->
   <section id="project-hero" class="hero section dark-background">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -14,60 +14,116 @@ layout: default
 
   <!-- Dashboard Section -->
   <section id="dashboard" class="section">
-      <div class='tableauPlaceholder' id='viz1732388933247' style='position: relative; display: flex; justify-content: center; align-items: center; margin: 0 auto; width: 100%;'>
-        <noscript>
-          <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/hr/hr_dashboard_112024/EmployeeOverview/1_rss.png' style='border: none' /></a>
-        </noscript>
-        <object class='tableauViz' style='max-width: 100%;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='hr_dashboard_112024/EmployeeOverview' />
-          <param name='tabs' value='yes' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https://public.tableau.com/static/images/hr/hr_dashboard_112024/EmployeeOverview/1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-        </object>
-      </div>
-    
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1732388933247');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        if (divElement.offsetWidth > 800) {
-          vizElement.style.width = '1200px';
-          vizElement.style.height = '850px';
-        } else if (divElement.offsetWidth > 500) {
-          vizElement.style.width = '1200px';
-          vizElement.style.height = '850px';
-        } else {
-          vizElement.style.width = '100%';
-          vizElement.style.height = '1300px';
-        }
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </section>
-     
-    <section id="dashboard-description" class="section">
-      <div class="container centered-container" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 2rem 0;" data-aos="fade-up">
-        <p>This project features a suite of dashboards designed to provide comprehensive insights into key HR metrics. The dashboards include:</p>
-        <ul style="text-align: left; padding-left: 1.5rem;">
-          <li><strong>Employee Engagement:</strong> Visualizing sentiment trends and tracking engagement scores across departments.</li>
-          <li><strong>Performance Insights:</strong> Highlighting top-performing teams, identifying patterns, and pinpointing areas for growth.</li>
-          <li><strong>Compensation Analysis:</strong> Breaking down salary distributions, benefits allocations, and equity considerations.</li>
-          <li><strong>Employee Overview:</strong> Providing a high-level snapshot of workforce demographics, tenure, and diversity metrics.</li>
-        </ul>
-        <p>My process began with thorough exploratory data analysis (EDA) to uncover trends, identify data quality issues, and define the KPIs that matter most. From there, I prepared and cleaned the dataset, ensuring it was ready for seamless integration into Tableau Public. Using Tableau, I connected the dataset, designed intuitive and visually appealing graphs, and brought everything together into cohesive, interactive dashboards.</p>
-        <p>Each dashboard was crafted to address specific stakeholder needs, with features like dynamic filters, drill-down capabilities, and responsive layouts that allow users to dive deeper into the data. The result is a powerful, user-friendly platform that tells a clear, data-driven story, empowering decision-makers to act with confidence.</p>
-      </div>
-    </section>
-    
-    <!-- End Dashboard Section -->
+    <div
+      class="tableauPlaceholder"
+      id="viz1732388933247"
+      style="
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+      "
+    >
+      <noscript>
+        <a href="#"
+          ><img
+            alt=" "
+            src="https://public.tableau.com/static/images/hr/hr_dashboard_112024/EmployeeOverview/1_rss.png"
+            style="border: none"
+        /></a>
+      </noscript>
+      <object class="tableauViz" style="max-width: 100%">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="hr_dashboard_112024/EmployeeOverview" />
+        <param name="tabs" value="yes" />
+        <param name="toolbar" value="yes" />
+        <param
+          name="static_image"
+          value="https://public.tableau.com/static/images/hr/hr_dashboard_112024/EmployeeOverview/1.png"
+        />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+      </object>
+    </div>
 
-  </main>
+    <script type="text/javascript">
+      var divElement = document.getElementById('viz1732388933247');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1200px';
+        vizElement.style.height = '850px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '1200px';
+        vizElement.style.height = '850px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1300px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src =
+        'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+  <section id="dashboard-description" class="section">
+    <div
+      class="container centered-container"
+      style="
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2rem 0;
+      "
+      data-aos="fade-up"
+    >
+      <p>
+        This project features a suite of dashboards designed to provide
+        comprehensive insights into key HR metrics. The dashboards include:
+      </p>
+      <ul style="text-align: left; padding-left: 1.5rem">
+        <li>
+          <strong>Employee Engagement:</strong> Visualizing sentiment trends and
+          tracking engagement scores across departments.
+        </li>
+        <li>
+          <strong>Performance Insights:</strong> Highlighting top-performing
+          teams, identifying patterns, and pinpointing areas for growth.
+        </li>
+        <li>
+          <strong>Compensation Analysis:</strong> Breaking down salary
+          distributions, benefits allocations, and equity considerations.
+        </li>
+        <li>
+          <strong>Employee Overview:</strong> Providing a high-level snapshot of
+          workforce demographics, tenure, and diversity metrics.
+        </li>
+      </ul>
+      <p>
+        My process began with thorough exploratory data analysis (EDA) to
+        uncover trends, identify data quality issues, and define the KPIs that
+        matter most. From there, I prepared and cleaned the dataset, ensuring it
+        was ready for seamless integration into Tableau Public. Using Tableau, I
+        connected the dataset, designed intuitive and visually appealing graphs,
+        and brought everything together into cohesive, interactive dashboards.
+      </p>
+      <p>
+        Each dashboard was crafted to address specific stakeholder needs, with
+        features like dynamic filters, drill-down capabilities, and responsive
+        layouts that allow users to dive deeper into the data. The result is a
+        powerful, user-friendly platform that tells a clear, data-driven story,
+        empowering decision-makers to act with confidence.
+      </p>
+    </div>
+  </section>
+
+  <!-- End Dashboard Section -->
+</main>
