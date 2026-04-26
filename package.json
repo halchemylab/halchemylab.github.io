@@ -4,9 +4,12 @@
   "description": "This is my professional website. It will always be a work in progress.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run check",
+    "check": "npm run format:check && npm run lint:js && npm run lint:css",
     "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
-    "lint:css": "stylelint \"**/*.css\" --fix --allow-empty-input",
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md}\"",
+    "lint:css": "stylelint \"**/*.css\" --allow-empty-input",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix --allow-empty-input",
     "lint:js": "eslint \"**/*.js\" --no-error-on-unmatched-pattern"
   },
   "repository": {
@@ -27,7 +30,6 @@
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.6.2",
     "stylelint": "^16.25.0",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^39.0.1"
   }
 }
