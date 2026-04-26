@@ -1,10 +1,11 @@
 # Ignore vendor libraries
 node_modules/
-henry_pai_resume_2025.pdf
+henry_pai_resume_*.pdf
 
-# Explicitly ignore files under assets/vendor
-assets/vendor/**/*.css
-assets/vendor/**/*.js
+# Explicitly ignore vendored dependencies and sourcemaps
+assets/vendor/
+assets/**/*.map
 
 # Minified production assets
+assets/css/main.min.css
 assets/js/main.min.js
