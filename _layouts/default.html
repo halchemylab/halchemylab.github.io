@@ -1,55 +1,36 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% assign seo_title = page.title | default: site.title %} {% assign
+    seo_description = page.description | default: site.description %} {% assign
+    seo_image = page.image | default: '/assets/img/hero-bg2.jpg' %} {% assign
+    seo_type = page.og_type | default: 'website' %}
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- ==== SEO Optimized Meta Tags ==== -->
-    <title>
-      Henry Pai | Fullstack Developer, Data Specialist & Marketer | Los Angeles
-    </title>
-    <meta
-      name="description"
-      content="Henry Pai's Portfolio: Expert Fullstack Developer, Data Specialist & Marketer in Los Angeles. Discover projects in AI, ML, Data Viz, RPA, Business Strategy & more."
-    />
+    <title>{{ seo_title | escape }}</title>
+    <meta name="description" content="{{ seo_description | escape }}" />
     <meta
       name="keywords"
       content="Henry Pai, Fullstack Developer, Data Specialist, Marketer, Business Strategist, Los Angeles, AI, Machine Learning, Data Analysis, Data Visualization, RPA, Python, SQL, Tableau, Power BI, Salesforce, UiPath, NYU, Halchemy Labs, Portfolio"
     />
     <meta name="author" content="Henry Pai" />
-    <link rel="canonical" href="https://halchemylab.github.io" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
     <!-- ==== Open Graph Meta Tags (for social sharing) ==== -->
-    <meta
-      property="og:title"
-      content="Henry Pai | Fullstack Developer, Data Specialist & Marketer | Los Angeles"
-    />
-    <meta
-      property="og:description"
-      content="Explore the portfolio of Henry Pai, showcasing expertise in fullstack development, data science, AI/ML, RPA, marketing, and business strategy. Based in Los Angeles."
-    />
-    <meta
-      property="og:image"
-      content="https://halchemylab.github.io/assets/img/hero-bg2.jpg"
-    />
-    <meta property="og:url" content="https://halchemylab.github.io" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ seo_title | escape }}" />
+    <meta property="og:description" content="{{ seo_description | escape }}" />
+    <meta property="og:image" content="{{ seo_image | absolute_url }}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:type" content="{{ seo_type }}" />
     <meta property="og:locale" content="en_US" />
 
     <!-- ==== Twitter Card Meta Tags (for Twitter sharing) ==== -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Henry Pai | Fullstack Developer, Data Specialist & Marketer | Los Angeles"
-    />
-    <meta
-      name="twitter:description"
-      content="Explore the portfolio of Henry Pai, showcasing expertise in fullstack development, data science, AI/ML, RPA, marketing, and business strategy. Based in Los Angeles."
-    />
-    <meta
-      name="twitter:image"
-      content="https://halchemylab.github.io/assets/img/hero-bg2.jpg"
-    />
+    <meta name="twitter:title" content="{{ seo_title | escape }}" />
+    <meta name="twitter:description" content="{{ seo_description | escape }}" />
+    <meta name="twitter:image" content="{{ seo_image | absolute_url }}" />
     <meta name="twitter:site" content="@alchemy27" />
 
     <!-- Favicons -->
