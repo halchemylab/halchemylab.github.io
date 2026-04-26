@@ -42,9 +42,9 @@ The repository follows a standard Jekyll structure, augmented with a `package.js
 ├── assets/                   # Static assets like CSS, JS, images, and vendor libraries
 │   ├── css/
 │   ├── img/
-│   └── js/
+│   ├── js/
 │   └── vendor/
-├── case-study-1.html         # Example project page
+├── projects/                 # Portfolio project and case study detail pages
 ├── index.html                # Main landing page
 ├── package.json              # Node.js dependencies and scripts for linting/formatting
 ├── README.md                 # This file
@@ -63,10 +63,10 @@ To view the website on your local machine, you need to have Ruby, Jekyll, and No
     cd halchemylab.github.io
     ```
 
-2.  **Install Ruby Dependencies:**
-    Open your terminal and navigate to the repository's root directory. Then, run the following command to install the required gems:
+2.  **Install Jekyll:**
+    This repository does not currently include a `Gemfile`, so install Jekyll directly if it is not already available on your machine:
     ```bash
-    bundle install
+    gem install jekyll bundler
     ```
 
 3.  **Install Node.js Dependencies:**
@@ -78,7 +78,7 @@ To view the website on your local machine, you need to have Ruby, Jekyll, and No
 4.  **Run the Jekyll Server:**
     After installations are complete, run the following command to start the Jekyll server:
     ```bash
-    bundle exec jekyll serve
+    jekyll serve
     ```
 
 5.  **View Your Website:**
