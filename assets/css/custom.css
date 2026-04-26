@@ -1,0 +1,106 @@
+.section-title-text-dark {
+  color: #000;
+}
+
+.cert-id {
+  font-size: 0.7rem;
+}
+
+.nyu-education-card {
+  background: #57068c;
+}
+
+.nyu-degree-panel {
+  background: rgb(255 255 255 / 10%);
+}
+
+.nyu-logo {
+  height: 50px;
+  margin-right: 15px;
+  width: 50px;
+}
+
+.nyu-text {
+  color: #e0e0e0;
+}
+
+.nyu-major-badge {
+  background: rgb(255 255 255 / 20%);
+  color: #fff;
+}
+
+.language-native {
+  background-color: #2e8b57;
+}
+
+.language-advanced {
+  background-color: #98fb98;
+}
+
+.language-latin {
+  background-color: #ffd700;
+}
+
+.halchemy-labs-section {
+  background-color: #0e0e0e;
+  color: #d3d3d3;
+}
+
+.halchemy-gradient-text {
+  background: linear-gradient(45deg, #a646f5, #00d4ff);
+  background-clip: text;
+  color: transparent;
+}
+
+.halchemy-intro {
+  max-width: 800px;
+}
+
+.halchemy-heading {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.halchemy-copy {
+  margin-bottom: 1.5rem;
+}
+
+.halchemy-service-title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.halchemy-feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.halchemy-check-icon {
+  color: #00d4ff;
+}
+
+.halchemy-gradient-border {
+  background: linear-gradient(45deg, #a646f5, #00d4ff);
+  border-radius: 15px;
+  padding: 2px;
+}
+
+.halchemy-panel {
+  background: #0e0e0e;
+  border-radius: 13px;
+  padding: 2rem;
+}
+
+.halchemy-service-item {
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.halchemy-cta {
+  background: linear-gradient(45deg, #a646f5, #00d4ff);
+  background-clip: text;
+  border: 2px solid;
+  color: transparent;
+  transition: all 0.3s ease;
+}
