@@ -25,146 +25,87 @@
   font-size: 0.7rem;
 }
 
-.technical-skills-matrix {
-  --matrix-accent: var(--accent-color, #ecb528);
-  --matrix-line: #e9ecef;
-  --matrix-soft: #fff8df;
+.technical-capabilities {
+  --technical-accent: var(--accent-color, #ecb528);
+  --technical-line: #eceff3;
+  --technical-soft: #fff8df;
 
   color: #222;
 }
 
-.skills-matrix-legend {
-  color: #6c757d;
-  font-size: 0.8rem;
+.technical-capability-list {
+  display: grid;
+  gap: 0;
 }
 
-.legend-item {
-  align-items: center;
-  display: inline-flex;
-  gap: 0.4rem;
+.technical-capability-item {
+  align-items: start;
+  border-bottom: 1px solid var(--technical-line);
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 2.55rem 1fr;
+  margin: 0 -0.75rem;
+  padding: 0.85rem 0.75rem;
+  position: relative;
+  transition: background-color 0.2s ease;
 }
 
-.skills-matrix-table-wrap {
-  border: 1px solid var(--matrix-line);
-  border-radius: 8px;
-  overflow: hidden;
+.technical-capability-item::before {
+  background: var(--technical-accent);
+  border-radius: 999px;
+  content: '';
+  height: 0;
+  left: -1rem;
+  position: absolute;
+  top: 0.85rem;
+  transition: height 0.2s ease;
+  width: 3px;
 }
 
-.skills-matrix-table {
-  background: #fff;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 0;
-  table-layout: fixed;
-  width: 100%;
-}
-
-.skills-matrix-table th,
-.skills-matrix-table td {
-  border-bottom: 1px solid var(--matrix-line);
-  padding: 0.8rem 0.55rem;
-}
-
-.skills-matrix-table thead th {
-  background: #fafafa;
-  color: #5f6670;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.skills-matrix-table tbody th {
-  background: #fff;
-  color: #222;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: left;
-  width: 30%;
-}
-
-.skills-matrix-table thead th:first-child {
-  text-align: left;
-  width: 30%;
-}
-
-.skills-matrix-table tbody td {
-  text-align: center;
-  vertical-align: middle;
-}
-
-.skills-matrix-table tbody tr:last-child th,
-.skills-matrix-table tbody tr:last-child td {
+.technical-capability-item:last-child {
   border-bottom: 0;
 }
 
-.skills-matrix-table tbody tr:hover th,
-.skills-matrix-table tbody tr:hover td {
-  background: var(--matrix-soft);
-}
-
-.matrix-dot {
-  border-radius: 999px;
-  display: inline-block;
-  height: 0.8rem;
-  vertical-align: middle;
-  width: 0.8rem;
-}
-
-.matrix-dot-core {
-  background: var(--matrix-accent);
-  box-shadow: 0 0 0 4px rgb(236 181 40 / 18%);
-}
-
-.matrix-dot-support {
-  background: #fff;
-  border: 2px solid var(--matrix-accent);
-}
-
-.skills-matrix-mobile {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.matrix-mobile-row {
-  background: #fafafa;
-  border: 1px solid var(--matrix-line);
+.technical-capability-item:hover {
+  background: linear-gradient(90deg, var(--technical-soft), transparent 72%);
   border-radius: 8px;
-  padding: 0.85rem;
 }
 
-.matrix-mobile-row h4 {
-  color: #222;
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin: 0 0 0.65rem;
+.technical-capability-item:hover::before {
+  height: calc(100% - 1.7rem);
 }
 
-.matrix-mobile-tags {
+.technical-capability-icon {
+  align-items: center;
+  background: linear-gradient(135deg, rgb(236 181 40 / 24%), #fff);
+  border: 1px solid rgb(236 181 40 / 34%);
+  border-radius: 8px;
+  color: #8a6500;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  font-size: 1.05rem;
+  height: 2.35rem;
+  justify-content: center;
+  width: 2.35rem;
 }
 
-.matrix-tag {
-  border-radius: 999px;
-  display: inline-flex;
-  font-size: 0.76rem;
+.technical-capability-content h4 {
+  color: #1f2933;
+  font-size: 0.98rem;
   font-weight: 700;
-  line-height: 1;
-  padding: 0.45rem 0.62rem;
+  margin: 0 0 0.28rem;
 }
 
-.matrix-tag-core {
-  background: var(--matrix-accent);
-  color: #1f1a05;
+.technical-capability-content p {
+  color: #6c757d;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  margin: 0;
 }
 
-.matrix-tag-support {
-  background: #fff;
-  border: 1px solid var(--matrix-accent);
-  color: #725400;
+@media (width <= 575px) {
+  .technical-capability-item {
+    grid-template-columns: 2.35rem 1fr;
+  }
 }
 
 .nyu-education-card {
