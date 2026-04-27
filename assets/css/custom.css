@@ -25,6 +25,148 @@
   font-size: 0.7rem;
 }
 
+.technical-skills-matrix {
+  --matrix-accent: var(--accent-color, #ecb528);
+  --matrix-line: #e9ecef;
+  --matrix-soft: #fff8df;
+
+  color: #222;
+}
+
+.skills-matrix-legend {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.legend-item {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.skills-matrix-table-wrap {
+  border: 1px solid var(--matrix-line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skills-matrix-table {
+  background: #fff;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.skills-matrix-table th,
+.skills-matrix-table td {
+  border-bottom: 1px solid var(--matrix-line);
+  padding: 0.8rem 0.55rem;
+}
+
+.skills-matrix-table thead th {
+  background: #fafafa;
+  color: #5f6670;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skills-matrix-table tbody th {
+  background: #fff;
+  color: #222;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+  width: 30%;
+}
+
+.skills-matrix-table thead th:first-child {
+  text-align: left;
+  width: 30%;
+}
+
+.skills-matrix-table tbody td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.skills-matrix-table tbody tr:last-child th,
+.skills-matrix-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.skills-matrix-table tbody tr:hover th,
+.skills-matrix-table tbody tr:hover td {
+  background: var(--matrix-soft);
+}
+
+.matrix-dot {
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.8rem;
+  vertical-align: middle;
+  width: 0.8rem;
+}
+
+.matrix-dot-core {
+  background: var(--matrix-accent);
+  box-shadow: 0 0 0 4px rgb(236 181 40 / 18%);
+}
+
+.matrix-dot-support {
+  background: #fff;
+  border: 2px solid var(--matrix-accent);
+}
+
+.skills-matrix-mobile {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.matrix-mobile-row {
+  background: #fafafa;
+  border: 1px solid var(--matrix-line);
+  border-radius: 8px;
+  padding: 0.85rem;
+}
+
+.matrix-mobile-row h4 {
+  color: #222;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 0.65rem;
+}
+
+.matrix-mobile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.matrix-tag {
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.45rem 0.62rem;
+}
+
+.matrix-tag-core {
+  background: var(--matrix-accent);
+  color: #1f1a05;
+}
+
+.matrix-tag-support {
+  background: #fff;
+  border: 1px solid var(--matrix-accent);
+  color: #725400;
+}
+
 .nyu-education-card {
   background: #57068c;
 }

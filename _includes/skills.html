@@ -135,139 +135,223 @@
             </div>
             <h3 class="h4 mb-0">Technical Skills</h3>
           </div>
-          <div
-            class="skill-progress-list"
-            aria-label="Technical Skill Proficiency"
-          >
-            <div class="skill-item mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium"
-                  >Python (Data Science & AI Libraries)</span
-                >
-                <span class="skill-percentage">95%</span>
-              </div>
-              <div
-                class="progress"
-                style="height: 8px"
-                role="progressbar"
-                aria-label="Python Proficiency"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 95%"
-                ></div>
-              </div>
+          <div class="technical-skills-matrix" aria-label="Technical Skills">
+            <div
+              class="skills-matrix-legend d-flex align-items-center gap-3 mb-3"
+              aria-label="Matrix Legend"
+            >
+              <span class="legend-item">
+                <span class="matrix-dot matrix-dot-core" aria-hidden="true">
+                </span>
+                Core
+              </span>
+              <span class="legend-item">
+                <span class="matrix-dot matrix-dot-support" aria-hidden="true">
+                </span>
+                Supporting
+              </span>
             </div>
 
-            <div class="skill-item mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">SQL & Database Management</span>
-                <span class="skill-percentage">90%</span>
-              </div>
-              <div
-                class="progress"
-                style="height: 8px"
-                role="progressbar"
-                aria-label="SQL Proficiency"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 90%"
-                ></div>
-              </div>
+            <div class="skills-matrix-table-wrap d-none d-md-block">
+              <table class="skills-matrix-table">
+                <caption class="visually-hidden">
+                  Technical skills mapped to project contexts
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">AI/ML</th>
+                    <th scope="col">Automation</th>
+                    <th scope="col">Web</th>
+                    <th scope="col">Analytics</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Python</th>
+                    <td>
+                      <span class="matrix-dot matrix-dot-core">
+                        <span class="visually-hidden">Core use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-core">
+                        <span class="visually-hidden">Core use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-support">
+                        <span class="visually-hidden">Supporting use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-support">
+                        <span class="visually-hidden">Supporting use</span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">SQL</th>
+                    <td>
+                      <span class="matrix-dot matrix-dot-core">
+                        <span class="visually-hidden">Core use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-support">
+                        <span class="visually-hidden">Supporting use</span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Machine Learning</th>
+                    <td>
+                      <span class="matrix-dot matrix-dot-support">
+                        <span class="visually-hidden">Supporting use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-core">
+                        <span class="visually-hidden">Core use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RPA Development</th>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-support">
+                        <span class="visually-hidden">Supporting use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-core">
+                        <span class="visually-hidden">Core use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Front End Development</th>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-core">
+                        <span class="visually-hidden">Core use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Digital Analytics</th>
+                    <td>
+                      <span class="matrix-dot matrix-dot-support">
+                        <span class="visually-hidden">Supporting use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="visually-hidden">Not a primary focus</span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-support">
+                        <span class="visually-hidden">Supporting use</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="matrix-dot matrix-dot-core">
+                        <span class="visually-hidden">Core use</span>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
-            <div class="skill-item mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">Machine Learning</span>
-                <span class="skill-percentage">85%</span>
+            <div class="skills-matrix-mobile d-md-none">
+              <div class="matrix-mobile-row">
+                <h4>Python</h4>
+                <div class="matrix-mobile-tags">
+                  <span class="matrix-tag matrix-tag-core">Data</span>
+                  <span class="matrix-tag matrix-tag-core">AI/ML</span>
+                  <span class="matrix-tag matrix-tag-support">Automation</span>
+                  <span class="matrix-tag matrix-tag-support">Analytics</span>
+                </div>
               </div>
-              <div
-                class="progress"
-                style="height: 8px"
-                role="progressbar"
-                aria-label="Machine Learning Proficiency"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 85%"
-                ></div>
+              <div class="matrix-mobile-row">
+                <h4>SQL</h4>
+                <div class="matrix-mobile-tags">
+                  <span class="matrix-tag matrix-tag-core">Data</span>
+                  <span class="matrix-tag matrix-tag-support">Analytics</span>
+                </div>
               </div>
-            </div>
-
-            <div class="skill-item mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">RPA Development (UiPath)</span>
-                <!-- Added specificity -->
-                <span class="skill-percentage">88%</span>
+              <div class="matrix-mobile-row">
+                <h4>Machine Learning</h4>
+                <div class="matrix-mobile-tags">
+                  <span class="matrix-tag matrix-tag-support">Data</span>
+                  <span class="matrix-tag matrix-tag-core">AI/ML</span>
+                </div>
               </div>
-              <div
-                class="progress"
-                style="height: 8px"
-                role="progressbar"
-                aria-label="RPA Development Proficiency"
-                aria-valuenow="88"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 88%"
-                ></div>
+              <div class="matrix-mobile-row">
+                <h4>RPA Development</h4>
+                <div class="matrix-mobile-tags">
+                  <span class="matrix-tag matrix-tag-support">AI/ML</span>
+                  <span class="matrix-tag matrix-tag-core">Automation</span>
+                </div>
               </div>
-            </div>
-
-            <div class="skill-item mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium"
-                  >Front End Development (HTML, CSS, JS)</span
-                >
-                <!-- Added specificity -->
-                <span class="skill-percentage">90%</span>
+              <div class="matrix-mobile-row">
+                <h4>Front End Development</h4>
+                <div class="matrix-mobile-tags">
+                  <span class="matrix-tag matrix-tag-core">Web</span>
+                </div>
               </div>
-              <div
-                class="progress"
-                style="height: 8px"
-                role="progressbar"
-                aria-label="Front End Development Proficiency"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 90%"
-                ></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">Digital Marketing & Analytics</span>
-                <span class="skill-percentage">95%</span>
-              </div>
-              <div
-                class="progress"
-                style="height: 8px"
-                role="progressbar"
-                aria-label="Digital Marketing Proficiency"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated"
-                  style="width: 95%"
-                ></div>
+              <div class="matrix-mobile-row">
+                <h4>Digital Analytics</h4>
+                <div class="matrix-mobile-tags">
+                  <span class="matrix-tag matrix-tag-support">Data</span>
+                  <span class="matrix-tag matrix-tag-support">Web</span>
+                  <span class="matrix-tag matrix-tag-core">Analytics</span>
+                </div>
               </div>
             </div>
           </div>
