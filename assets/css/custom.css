@@ -217,6 +217,14 @@
   max-width: 800px;
 }
 
+.halchemy-founder-line {
+  color: var(--accent-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  max-width: 720px;
+}
+
 .halchemy-heading {
   color: #fff;
   margin-bottom: 1.5rem;
